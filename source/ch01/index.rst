@@ -1,7 +1,7 @@
-.. _chapter0index:
+.. _chapter1index:
 
 
-1: 怎么开始?
+1: 进入初期
 ============================================
 
 
@@ -10,5 +10,7 @@
 .. toctree::
    
    preknow.rst
+   try.rst
+   so.rst
 
 

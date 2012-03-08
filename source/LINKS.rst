@@ -9,7 +9,6 @@
 .. _OBP参与: http://code.google.com/p/openbookproject/wiki/HowtoJoin
 
 
-
 .. 工程链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _OpenResty: http://openresty.org/cn/
 .. _openrestywiki: http://openresty.org/cn/
@@ -17,6 +16,9 @@
 .. _openrestymlist: http://groups.google.com/group/openresty
 
 .. 外部链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _Lua: http://en.wikipedia.org/wiki/Lua_%28programming_language%29
+
+
 .. _Python: http://python.org
 .. _Pythonic: http://wiki.woodpecker.org.cn/moin/PythonIc
 .. _Python website: http://www.python.org

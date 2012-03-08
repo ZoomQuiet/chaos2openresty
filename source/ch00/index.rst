@@ -10,5 +10,7 @@
 .. toctree::
    
    preknow.rst
+   try.rst
+   so.rst
 
 

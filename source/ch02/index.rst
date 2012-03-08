@@ -1,7 +1,7 @@
-.. _chapter0index:
+.. _chapter2index:
 
 
-2: 怎么继续?
+2: 怎么深入?
 ============================================
 
 
@@ -10,5 +10,7 @@
 .. toctree::
    
    preknow.rst
+   try.rst
+   so.rst
 
 
