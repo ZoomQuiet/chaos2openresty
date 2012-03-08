@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# RWIwPyZh documentation build configuration file, created by
+# chaos2OpenRest documentation build configuration file, created by
 # sphinx-quickstart on Fri Feb 18 22:38:59 2011.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -90,6 +90,7 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output ---------------------------------------------------
 
+html_theme_path = ["_theme"]
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'obpnomal'
@@ -103,7 +104,6 @@ html_theme = 'obpnomal'
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
-html_theme_path = ["_theme"]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -168,7 +168,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'RWIwPyZhdoc'
+htmlhelp_basename = 'chaos2OpenRestdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -182,7 +182,7 @@ htmlhelp_basename = 'RWIwPyZhdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 #latex_documents = [
-#  ('index', 'RWIwPyZh.tex', u'RWIwPyZh Documentation',
+#  ('index', 'chaos2OpenRest.tex', u'chaos2OpenRest Documentation',
 #   u'Zoom.Quiet', 'manual'),
 #]
 
@@ -215,6 +215,6 @@ htmlhelp_basename = 'RWIwPyZhdoc'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 #man_pages = [
-#    ('index', 'rwiwpyzh', u'RWIwPyZh Documentation',
+#    ('index', 'chaos2OpenRest', u'chaos2OpenRest Documentation',
 #     [u'Zoom.Quiet'], 1)
 #]
