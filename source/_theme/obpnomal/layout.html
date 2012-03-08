@@ -1,0 +1,119 @@
+{#
+    obpnomal/layout.html
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Sphinx layout template for the agogo theme, originally written
+    by Andi Albrecht.
+
+    :copyright: Copyright 2007-2010 by the Sphinx team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+    Changelog:
+        110415 Zoom.Quiet hacking basic.html appended 'last_updated' in Option
+        110414 lizziesky fixed comment.js/css
+    extends "basic/layout.html"
+#}
+{% extends "basic.html" %}
+
+{% block header %}
+    <div class="header-wrapper">
+      <div class="header">
+          <div class="logo"><a href="{{ pathto(master_doc) }}">
+            <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+        <!--
+        <img class="logo" src="{{ pathto('_static/nginx-wiki-logo.png',1) }}" alt="Logo"/>
+        -->
+          </a></div>
+        {%- if logo %}
+        {%- endif %}
+
+        {%- block headertitle %}
+        <h3>{{ shorttitle|e }}</h3>
+        <div class="versionnum">
+Version: <b>{{ release }}</b> 
+        </div>
+        {%- endblock %}
+
+
+        <div class="relnav">
+        [<a href="{{ pathto(master_doc) }}" title="INDEX">首页</a>]
+            {% if prev %}
+            <a href="{{ prev.link|e }}">{{ prev.title }}</a>
+            <<{% endif %}
+        {% if current_page_name != master_doc %}
+            {{ title }}
+          {%- if show_source and has_source and sourcename %}
+            <sup><a href="{{ pathto('_sources/' + sourcename, true)|e }}"
+               rel="nofollow">({{ _('Source') }})</a>
+            </sup>
+          {%- endif %}
+        {% endif %}
+
+            {% if next %}
+            >><a href="{{ next.link|e }}">{{ next.title }}</a>
+            {% endif %}
+            </div>  <!--class="rel"-->
+
+       </div>   <!--class="header"-->
+    </div>      <!--class="header-wrapper"-->
+{% endblock %}
+
+{% block content %}
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+        <div class="tocsidebar">
+          {%- block sidebartoc %}
+
+            {% if display_toc and not current_page_name.startswith('index') %}
+            {{ toc }}
+            {% endif %}
+
+          {%- endblock %}
+        </div>
+
+          {%- block document %}
+            {{ super() }}
+          {%- endblock %}
+        </div>
+            <div class="clearer"></div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer-wrapper">
+      <div class="footercnt">
+        
+        <div class="rel">
+            [<a href="{{ pathto(master_doc) }}" title="INDEX">首页</a>]
+            <br/>
+            {% if prev %}
+            <a href="{{ prev.link|e }}">{{ prev.title }}</a>
+            <<{% endif %}
+            <br/>
+            {% if current_page_name != master_doc %}
+                {{ title }}
+              {%- if show_source and has_source and sourcename %}
+                <sup><a href="{{ pathto('_sources/' + sourcename, true)|e }}"
+                   rel="nofollow">({{ _('Source') }})</a>
+                </sup>
+              {%- endif %}
+            {% endif %}
+            <br/>
+            {% if next %}
+            >><a href="{{ next.link|e }}">{{ next.title }}</a>
+            {% endif %}
+        </div>  <!--class="rel"-->
+
+        {{ super() }}
+            <div class="clearer"></div>
+      </div>    <!-- class="footercnt" -->
+    </div>      <!--class="footer-wrapper"-->
+    <!-- comment utility -->
+    <link rel="stylesheet" href="{{ pathto('_static/j/comment.css', 1) }}" type="text/css" />
+    <script type="text/javascript" src="{{ pathto('_static/j/comment.js', 1) }}"></script>
+
+{% endblock %}
+
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
