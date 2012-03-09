@@ -1,0 +1,97 @@
+#! /bin/sh
+#-------------------------------------
+#Nginx server control script
+#By BB-Q 2008-10-25 17:14
+#------------------------------------
+
+DAEMON="/usr/local/openresty/nginx/sbin/nginx" 
+CONF="/usr/local/openresty/nginx/conf/nginx.conf" 
+PID="/usr/local/openresty/nginx/logs/nginx.pid" 
+
+#ROOTPATH="/usr/local/etc/nginx" 
+#CONF="$ROOTPATH/nginx.conf"    #"$ROOTPATH/conf/nginx.conf" 
+#DAEMON="/usr/local/sbin/nginx"  #"$ROOTPATH/sbin/nginx" 
+#PID="/var/run/nginx.pid"  #"$ROOTPATH/run/nginx.pid" 
+
+nginx_start() { 
+  # Sanity checks. 
+  if [ ! -r $CONF ]; then
+    echo "Please check the nginx config file, exiting..." 
+    exit 1 
+  fi 
+
+  if [ -s $PID ]; then 
+    echo "Nging is already running?" 
+    exit 1 
+  fi 
+
+  echo "Starting Nginx server daemon:" 
+  if [ -x $DAEMON ]; then 
+    $DAEMON -c $CONF 
+  fi 
+} 
+
+nginx_test_conf() { 
+  echo "Checking configuration for correct syntax and" 
+  echo "then trying to open files referenced in configuration..." 
+  $DAEMON -t -c $CONF 
+} 
+
+nginx_term() { 
+  echo "Shutdown Nginx quickly..." 
+  kill -TERM $(cat $PID) 
+} 
+
+nginx_stop() { 
+  echo "Shutdown Nginx gracefully..." 
+  kill -QUIT $(cat $PID) 
+} 
+
+nginx_reload() { 
+  echo "Reloading Nginx configuration..." 
+  kill -HUP $(cat $PID) 
+} 
+
+nginx_upgrade() { 
+  echo "Upgrading to the new Nginx binary." 
+  echo "Make sure the Nginx binary has been replaced with new one" 
+  echo "or Nginx server modules were added/removed." 
+  kill -USR2 $(cat $PID) 
+  sleep 3 
+  kill -QUIT $(cat $PID.oldbin) 
+} 
+
+nginx_restart() { 
+  nginx_stop 
+  sleep 5 
+  nginx_start 
+} 
+
+case "$1" in 
+  check) 
+    nginx_test_conf 
+    ;; 
+  start) 
+    nginx_start 
+    ;; 
+  term) 
+    nginx_term 
+    ;; 
+  stop) 
+    nginx_stop 
+    ;; 
+  reload) 
+    nginx_reload 
+    ;; 
+  restart) 
+    nginx_restart 
+    ;; 
+  upgrade) 
+    nginx_upgrade 
+    ;; 
+  *) 
+  echo "usage: $0 {check|start|term|stop|reload|restart|upgrade}" 
+esac
+
+#---------- end --------------------------------------------------
+
