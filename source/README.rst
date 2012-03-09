@@ -1,4 +1,5 @@
 .. include:: LINKS.rst
+.. |rsticon| image:: _static/rst.png
 
 
 基于结构化文本~ |rsticon| 的图书工程
