@@ -10,7 +10,7 @@
 - `lua-users wiki: Module Definition <http://lua-users.org/wiki/ModuleDefinition>`_
 - 以及更加直接的动力:
 
-`OpenResty`_ 邮件列表中的讨论过程,核心作者的`明确提示 <https://groups.google.com/forum/?fromgroups#!topic/openresty/AK5s69NMOFA>`_ :
+`OpenResty`_ 邮件列表中的讨论过程,核心作者的 `明确提示 <https://groups.google.com/forum/?fromgroups#!topic/openresty/AK5s69NMOFA>`_ :
 
 ::
 
