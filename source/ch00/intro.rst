@@ -28,7 +28,7 @@
         
             - `教程博客版 <http://blog.sina.com.cn/s/blog_6d579ff40100y5p7.html>`_
         
-        - `Lua程序设计 <http://book.luaer.cn/main.htm>`_
+        - `Lua程序设计 <http://book.luaer.cn/>`_
 
             - `Lua脚本语法说明 <http://www.cnblogs.com/ly4cn/archive/2006/08/04/467550.html>`_
 
