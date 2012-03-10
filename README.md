@@ -1,8 +1,8 @@
 # 乱入OpenResty
 
-如何乱来的从0开始享受 OpenResty 的方便,直接在 Nginx 中进行业务的实现!
+如何乱来的从0开始享受 [OpenResty](http://openresty.org/) 的方便,直接在 Nginx 中进行业务的实现!
 
-- 私人体验,分享感触, 完全 `Zoom.Quiet`_ 个人编撰...
+- 私人体验,分享感触, 完全 [Zoom.Quiet](http://zoomquiet.org) 个人编撰...
 
 ## 实案
 
