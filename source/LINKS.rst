@@ -15,10 +15,22 @@
 .. _openrestyrepo: http://github.com/agentzh/ngx_openresty
 .. _openrestymlist: http://groups.google.com/group/openresty
 
+.. _C10K: http://www.kegel.com/c10k.html
+
 .. _agentzh: http://agentzh.org/
+
+.. _42: http://en.wikipedia.org/wiki/42_(number)
 
 .. 外部链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. _Lua: http://en.wikipedia.org/wiki/Lua_%28programming_language%29
+.. _Nginx: http://wiki.nginx.org
+.. _Go: http://golang.org/
+.. _Rust: http://www.rust-lang.org/
+.. _Pyhton: http://python.org/
+.. _Haskell: http://www.haskell.org/
+.. _node: http://nodejs.org/
+
+
 .. _正则表达式: http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F
 .. _tmux: http://www.linuxtoy.org/archives/from-screen-to-tmux.html
 

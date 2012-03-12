@@ -15,6 +15,8 @@
     ch00/index.rst
     ch01/index.rst
     ch02/index.rst
+    ch03/index.rst
+    appa/index.rst
     AUTHORS.rst
     LICENSE.rst
     CHANGELOG.rst
