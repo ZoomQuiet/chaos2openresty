@@ -19,3 +19,8 @@
 
     - 益rz ...
 
+
+一切的效率发源:
+
+Kernel Asynchronous I/O (AIO) Support for Linux
+http://lse.sourceforge.net/io/aio.html

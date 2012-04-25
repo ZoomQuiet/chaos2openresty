@@ -41,7 +41,7 @@
 
   - 这儿的配置,和官方不同
   - 是因为: `Issue #3: <https://github.com/agentzh/ngx_openresty/issues/3>`_
-
+  - 另外,编译时,可以使用 `-j8` 参数动用所有 CPU 快速完成编译!
 
 
 跑

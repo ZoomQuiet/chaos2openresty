@@ -25,3 +25,6 @@
 
 所以,继续折腾...
 
+
+ngx_lua 管理的 cosocket 和 nginx_http_uptream 的平行关系
+http://agentzh.org/misc/slides/libdrizzle-lua-nginx/#57
