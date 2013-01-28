@@ -26,5 +26,11 @@
 所以,继续折腾...
 
 
+本章节,撰写ing,,,先散乱的从 OpenResty 列表中收集了一些自个儿感觉很基础的技巧
+
+- 但是工作原因,没有时间继续深入了
+- 好在是开源图书,有心者可以共同完善下去...
+
+
 ngx_lua 管理的 cosocket 和 nginx_http_uptream 的平行关系
 http://agentzh.org/misc/slides/libdrizzle-lua-nginx/#57
