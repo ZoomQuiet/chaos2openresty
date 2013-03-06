@@ -45,7 +45,8 @@
 .. _reSTsections: http://sphinx.pocoo.org/rest.html#sections
 
 .. 图片链接收集~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. |zqeye| image:: _static/zq-eyes.png
+
+.. |zqeyes| image:: _static/zq-eyes.png
    :alt: 是也乎;-)
    :target: http://wiki.woodpecker.org.cn/moin/ZoomQuiet
 
