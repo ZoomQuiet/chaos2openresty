@@ -255,6 +255,8 @@ luarocks
 
 
 - 使用?! 参考: `官方手册 <http://lua-curl.luaforge.net/>`_
+- 以及: [Lua-cURL by msva](http://msva.github.io/lua-curl/)
+- 
 
 抄个小函式就好: 
 
@@ -277,6 +279,10 @@ luarocks
         return ok, table.concat(result)
     end
 
+
+- 感谢 TooNTonG 的提醒
+    - 这里使用 Lua-cURL 的对外请求是阻塞的,这也是俺的期望...
+    - 参考: `IO - 同步，异步，阻塞，非阻塞 （亡羊补牢篇） - 智障大师 <http://blog.csdn.net/historyasamirror/article/details/5778378>`_
 
 - 增补到工作脚本中
 
